@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Java Script Demo1</title>
+        <script type="text/javascript">
+            function show_prompt(){
+                name=prompt("Enter Your Name:");
+                result = confirm("Your Name is "+name);
+                if(result!=""){
+                    document.write("Your entered name is:"+name);
+                }
+            }
+        </script>
+    </head>
+    <body>
+        
+        
+        <h1>Prompt and confirm</h1> 
+            <input type="button" value="Enter Name" onclick="show_prompt()">       
+    </body>
+</html>
