@@ -1,0 +1,60 @@
+<html>
+    <head>
+        <title>csslinks</title>
+        <style type="text/css">
+            
+            #link1{
+                color:rgb(7, 13, 7);
+            }
+            #link2{
+                color:green;
+                text-decoration:none;
+
+            }
+            #link2:link{
+                color:green;
+                text-decoration: none;
+            }
+            #link2:hover{
+                color:red;
+                text-decoration: underline;
+            }
+            #link3{
+                border-style:solid;
+                border-color:rgb(27, 81, 27);
+                padding:5px;
+                
+            }
+            #link4{
+                border-style:solid;
+                border-color:rgb(231, 14, 206);
+                background-color: rgb(216, 184, 25);
+                padding:5px;
+            }
+            #link4:hover{
+                color:white;
+                background-color: rgb(40, 67, 165);
+                text-decoration: underline;
+            }
+        </style>
+        <script type="text/javascript">
+            function getlinks(){
+                var arr=document.links;
+                for(i=0;i<arr.length;i++){
+                    alert(ar[i]);
+                }
+            }
+            
+        </script>
+    </head>
+    <body>
+        <a href="#" id="Link1">Link1</a>&nbsp;&nbsp;
+        <a href="#" id="Link2">Link2</a>&nbsp;&nbsp;
+        <a href="#" id="Link3">Link3</a>&nbsp;&nbsp;
+        <a href="#" id="Link4">Link4</a>&nbsp;&nbsp;
+        </a>
+        <div>
+            <input type="button" value="getlinks" onclick="getlinks()">
+        </div>
+    </body>
+</html>
